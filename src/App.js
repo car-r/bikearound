@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import react from 'react'
 import './App.css';
+import BikeType from './components/BikeType';
+import ExploreTrails from './components/ExploreTrails';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
+import HostBike from './components/HostBike';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <HeroSection />
+      <BikeType />
+      <ExploreTrails />
+      <HostBike />
+      <Footer />
     </div>
   );
 }
