@@ -1,4 +1,4 @@
-import react from 'react'
+
 import './App.css';
 import BikeType from './components/BikeType';
 import ExploreTrails from './components/ExploreTrails';
