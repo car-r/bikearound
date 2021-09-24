@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HeroImg from './herobackground.jpg'
+import { Link as RouterLink } from 'react-router-dom'
 
 export const HeroContainer = styled.div`
     display: flex;
@@ -27,13 +28,15 @@ export const HeroSubtitle = styled.div`
     margin-bottom: 0.5em;
 `
 
-export const HeroButton = styled.button`
+export const HeroButton = styled(RouterLink)`
     display: inline;
     padding: 0.75em 2em;
     border-radius: 50px;
     background: white;
     border: none;
     font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
 
     &:hover {
         cursor: pointer;

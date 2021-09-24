@@ -1,13 +1,16 @@
 import React from 'react'
-import { Nav } from '../NavElements'
+import { Logo, Nav, NavContainer, NavElement } from '../NavElements'
 
 const Navbar = () => {
     return (
         <Nav>
-            <p>BIKEAROUND</p>
-            <p>Become a host</p>
-            <p>Login</p>
-            <p>Signup</p>
+            <Logo to='/'>BIKEAROUND</Logo>
+            <NavContainer>
+                <NavElement to='/host'>Become a host</NavElement>
+                <NavElement to='/login'>Login</NavElement>
+                <NavElement to='/signup'>Signup</NavElement>
+            </NavContainer>
+            
         </Nav>
     )
 }

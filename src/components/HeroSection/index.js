@@ -6,7 +6,7 @@ const HeroSection = () => {
         <HeroContainer>
             <HeroTitle>Find a bike</HeroTitle>
             <HeroSubtitle>Go for a ride</HeroSubtitle>
-            <HeroButton>Search bikes</HeroButton>
+            <HeroButton to='/bikes'>Search bikes</HeroButton>
         </HeroContainer>
     )
 }
