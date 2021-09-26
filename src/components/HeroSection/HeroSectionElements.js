@@ -8,7 +8,6 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 45em;
-    border: solid 1px black;
     background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5) ), url(${HeroImg});
     background-size: cover;
     background-color: black;
