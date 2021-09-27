@@ -58,6 +58,7 @@ export const LearnMoreBtn = styled.button`
 
     &:hover {
         cursor: pointer;
-        
+        background-color: rgba(49, 49, 49, 1);
+        // color: black;
     }
 `

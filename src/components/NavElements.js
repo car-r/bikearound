@@ -7,7 +7,9 @@ export const Nav = styled.div`
     height: 5em;
     align-items: center;
     padding: 1em;
-    box-shadow: 0 4px 2px -4px lightgray;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); */
+   
 `
 
 export const NavContainer = styled.div`
@@ -18,10 +20,17 @@ export const NavContainer = styled.div`
 export const NavElement = styled(RouterLink)`
     text-decoration: none;
     color: black;
-    margin-right: 2em;
+    margin-right: 1.5em;
+    padding: 0.5em 1.25em;
+    border-radius: 2em;
+    //border: 1px solid black;
 
     :nth-last-of-type(1) {
         margin-right: 0;
+    }
+
+    &:hover {
+        background-color: rgba(236, 236, 236, 0.5)
     }
 
 `

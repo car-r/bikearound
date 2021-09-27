@@ -39,5 +39,7 @@ export const HeroButton = styled(RouterLink)`
 
     &:hover {
         cursor: pointer;
+        background-color: rgba(236, 236, 236, 1)
     }
+   
 `
