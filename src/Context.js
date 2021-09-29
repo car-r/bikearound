@@ -6,6 +6,7 @@ const Context = React.createContext()
 
 function ContextProvider({children}) {
     const [allBikes, setAllBikes] = useState([])
+    const [favoriteBikes, setFavoriteBikes] = useState([])
 
     useEffect(() => {
         setAllBikes(BikeCardData)
@@ -20,8 +21,19 @@ function ContextProvider({children}) {
             return bike
         })
         setAllBikes(updatedBikes)
+        
+        // const favoriteBikeList = updatedBikes.filter(bike => bike.isFavorite)
+        // setFavoriteBikes(favoriteBikeList)
     }
 
+
+
+    
+    // let favoriteBikeList = allBikes.filter(bike => bike.isFavorite)
+    // setFavoriteBikes(favoriteBikeList)    
+    
+    console.log(favoriteBikes)
+    
 
     return (
         <Context.Provider value={{allBikes, toggleFavorite}}>

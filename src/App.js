@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Bikes from './pages/Bikes';
+import FavoriteBikes from './pages/FavoriteBikes';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         <HostBike />
         </Route>
 
+        <Route path='/favorites'>
+          <FavoriteBikes />
+        </Route>
         <Route path='/host'>
           <Host />
         </Route>

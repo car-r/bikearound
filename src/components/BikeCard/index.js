@@ -18,7 +18,7 @@ const BikeCard = ({name, rating, numOfRides, dayRate, bikeImage, isFavorite, id}
     }
 
     return (
-        <BikeCardContainer onClick={() => console.log("clicked")}>
+        <BikeCardContainer >
             <BikeCardImage src={bikeImage}/>
             <BikeCardDataContainer>
                 <BikeCardName>{name}</BikeCardName>

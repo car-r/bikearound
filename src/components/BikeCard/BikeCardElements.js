@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const BikeCardContainer = styled.div`
     display: flex;
+    flex-shrink: 2;
     flex-direction: column;
-    width: 20em;
+    min-width: 15em;
+    max-width: 20em;
     // border: 1px solid black;
     border-radius: 1em;
     // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
@@ -22,7 +24,7 @@ export const BikeCardImage = styled.img`
     object-fit: cover;  
     // background-color: lightgray;
     height: 13em;
-    width: 100%;
+    width: auto;
     border-radius: 1em 1em 0 0;
 `
 
