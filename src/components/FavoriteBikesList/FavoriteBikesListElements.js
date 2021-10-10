@@ -14,6 +14,7 @@ export const FavoriteBikesListContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
     gap: 1.5em;
+    justify-self: center;
 `
 
 export const FavoriteBikesH1 = styled.h1`

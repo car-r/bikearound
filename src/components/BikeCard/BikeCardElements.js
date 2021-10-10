@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link as RouterLink} from 'react-router-dom'
 
 export const BikeCardContainer = styled.div`
     display: flex;
@@ -6,12 +7,13 @@ export const BikeCardContainer = styled.div`
     flex-direction: column;
     min-width: 15em;
     max-width: 20em;
-    // border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 1em;
-    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19); */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    // border: 1px solid black;
-
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: black;
 `
 
 export const BikeCardDataContainer = styled.div`
@@ -29,10 +31,12 @@ export const BikeCardImage = styled.img`
 `
 
 
-export const BikeCardName = styled.div`
+export const BikeCardName = styled(RouterLink)`
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.3em;
+    text-decoration: none;
+    color: black;
 `
 
 export const BikeCardSublineContainer = styled.div`

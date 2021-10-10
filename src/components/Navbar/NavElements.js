@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link as RouterLink} from 'react-router-dom'
+// import MenuIcon from '@material-ui/icons/Menu';
 
 export const Nav = styled.div`
     display: flex;
@@ -17,6 +18,17 @@ export const NavContainer = styled.div`
     margin-right: 1em;
 `
 
+export const IconWrapper = styled.div`
+    display: none;
+
+    @media screen and (max-width: 850px) {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+`
+
+
 export const NavElement = styled(RouterLink)`
     text-decoration: none;
     color: black;
@@ -33,11 +45,15 @@ export const NavElement = styled(RouterLink)`
         background-color: rgba(236, 236, 236, 0.5)
     }
 
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+
 `
 
 export const Logo = styled(RouterLink)`
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    // margin-left: 1em;
+    margin-left: 0.75em;
 `

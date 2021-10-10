@@ -4,6 +4,7 @@ export const HostBikeContainer = styled.div`
     display: flex;
     width: 95%;
     margin: 0 auto;
+    background: cover;
     background-size: cover;
     height: 30em;
     border-radius: 1em;

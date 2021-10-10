@@ -1,6 +1,7 @@
 
 import './App.css';
 import {Switch, Route} from "react-router-dom"
+import React, {useState} from 'react'
 
 import Host from './pages/Host';
 import BikeType from './components/BikeType';
@@ -13,11 +14,20 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Bikes from './pages/Bikes';
 import FavoriteBikes from './pages/FavoriteBikes';
+import Sidebar from './components/Sidebar';
+import Bike from './pages/Bike';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+        console.log("toggle")
+    }
   return (
     <div className="App">
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle}/>
       <Switch>
         <Route exact path='/'>
           <HeroSection />
@@ -40,6 +50,9 @@ function App() {
         </Route>
         <Route path='/bikes'>
           <Bikes />
+        </Route>
+        <Route path='/bike'>
+          <Bike />
         </Route>
       </Switch>
 

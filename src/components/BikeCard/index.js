@@ -4,6 +4,7 @@ import { BikeCardBottomContainer, BikeCardContainer, BikeCardDataContainer, Bike
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import StarIcon from '@material-ui/icons/Star';
+import Bike from '../../pages/Bike';
 
 
 const BikeCard = ({name, rating, numOfRides, dayRate, bikeImage, isFavorite, id}) => {
@@ -18,10 +19,10 @@ const BikeCard = ({name, rating, numOfRides, dayRate, bikeImage, isFavorite, id}
     }
 
     return (
-        <BikeCardContainer >
+        <BikeCardContainer>
             <BikeCardImage src={bikeImage}/>
             <BikeCardDataContainer>
-                <BikeCardName>{name}</BikeCardName>
+                <BikeCardName to={`/bike/${id}`}>{name}</BikeCardName>
                 <BikeCardSublineContainer>
                     <BikeCardRating>{rating}</BikeCardRating>
                     <StarIcon style={{fontSize: "large"}}/>
